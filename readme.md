@@ -33,9 +33,6 @@
 - 2013-2014
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
-## Contact me
-- [Class Facebook group - Please join!](https://www.facebook.com/groups/1887916721485612/)
-
 ## Week 1
 - [Introduction slides](https://1drv.ms/p/s!Ak7y2552PWCrjP0aAPZh_GfC1J8xyA)
 

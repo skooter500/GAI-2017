@@ -1,5 +1,7 @@
 # DT228/DT282/DT211 4th Year Game AI Course 2017
 
+[![YouTube](http://img.youtube.com/vi/iucyXHyrBQI/0.jpg)](https://www.youtube.com/watch?v=iucyXHyrBQI)
+
 ## Resources
 - [Class Facebook group - Please join!](https://www.facebook.com/groups/1887916721485612/)
 - [Previous lab tests](https://1drv.ms/u/s!Ak7y2552PWCrkNACJ7n8qiU8UPRs9w)

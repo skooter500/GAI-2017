@@ -38,12 +38,23 @@
 
 # Lab
 
-Make this in Unity
+- Make this in Unity:
+
+    [![YouTube](http://img.youtube.com/vi/wB4Ptbgwra0/0.jpg)](https://www.youtube.com/watch?v=wB4Ptbgwra0)
+
+- What is happening:
+- Third person camera that follows the player tank, which is controlled with the wasd keys. Shoot with the space key
+- The game always tries to keep 5 target tanks around the player
+- Tanks spawn every 2 seconds starting after 3 seconds into the game
+- Bullets disappear after 20 seconds
+- When a bullet hits a target tank, it should explode. After 3 seconds the pieces sink into the floor and a new tank will respawn
 
 ## Week 4
 - Unity Fundamentals. Maks sure you know about:
     - GameObjects
     - GameComponents
+    - Transforms, positions, quaternions
+    - Lerping, Slerping and LookAt
     - Getting and adding gamecomponents programmatically
     - Awake, Start, Update
     - Instiantiating GameObjects from prefabs
@@ -54,13 +65,10 @@ Make this in Unity
     - Using Invoke
 - [Demo project we worked on with the movable tank](unity/Demo1)
 
-# Lab
-
-
 ## Week 3
 - Making creatures with tails and stuff
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Z9Phd1HzTT0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+[![YouTube](http://img.youtube.com/vi/Z9Phd1HzTT0/0.jpg)](https://www.youtube.com/watch?v=Z9Phd1HzTT0)
 
 # Lab
 
@@ -95,10 +103,11 @@ Use Forms to make a new creature. The steps we followed to make Steve are:
         - Tail Animator
         - Spine Animator
     - Make the tail body          
-## Week 2
-- Making creatures:
 
-    [![YouTube](http://img.youtube.com/vi/TIemgyhEFEM/0.jpg)](https://www.youtube.com/watch?v=TIemgyhEFEM)
+## Week 2
+- Making creatures part 1:
+
+    [![YouTube](http://img.youtube.com/vi/9E087q0SEBM/0.jpg)](https://www.youtube.com/watch?v=9E087q0SEBM)
 
 # Lab
 - Make a procedural fish animation

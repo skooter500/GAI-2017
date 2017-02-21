@@ -11,7 +11,7 @@ For this assignment, I want you to use all the game AI techniques you can think 
 - Behaviour trees
 - Goal directed agent AI
 
-Marking Scheme
+## Marking Scheme
 
 Complexity - 30%
 Anthropromorphism - 20%
@@ -19,7 +19,8 @@ Aesthetic - 20%
 Documentation - 10%
 Jazz - 10%
 
-Rubric
+## Rubric
+
 | Grade | Description |
 | ------|-------------|
 | First | The animation looks fantastic and complex with convinving, realistic creature movement through a complex environment. Your creature interacts with its environment, other creatures and the player. You might have taken inspiration from a real creature and your creation bears a close resemblance to it. Your creature has convincingly realistic high level goals and behaviours and appears alive and unpredictable. You have developed your own framework of well designed AI code that uses polymorphism, interfaces and appropriate design patterns to maximise code reuse and flexibility. You code is flexible enough to be used to program different types of creatures. You have researched and are using a number of AI techniques that significantly expand on the techniques we learned in the class.  You made a pull request on Forms to contribute your code back to the course. The creature is made procedurally or alternatively you have made a skinned mesh in Blender and animated it procedurally. The colour scheme and art style are appropriate. Your assignment has polish. Your git repo is well documented with video examples, a build and instructions for compilation and use. Your work is of a standard that you would consider submitting it to the Unity Asset Store. You demo your assignment with pride at DubLudo. |

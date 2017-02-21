@@ -34,7 +34,10 @@
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
 ## Week 5
--  Seek & arrive steering behaviours
+- Seek & arrive steering behaviours - Look at the slides for [course notes](https://onedrive.live.com/?authkey=%21AAb-R5vP9R9enWo&id=AB603D769EDBF24E%21210396&cid=AB603D769EDBF24E)
+- [Seek and arrive steering behaviours in Unity.](https://github.com/skooter500/GamesAIBasics) These are implemented using my old framework (boolean flags - quick and dirty but ugly)
+- [Assignment brief! PM me with any comments/ideas](ca.md)
+- [Craig Reynolds on steering behaviours](http://www.red3d.com/cwr/steer/) - Everyone should read!
 
 # Lab
 
@@ -48,6 +51,8 @@
 - Tanks spawn every 2 seconds starting after 3 seconds into the game
 - Bullets disappear after 20 seconds
 - When a bullet hits a target tank, it should explode. After 3 seconds the pieces sink into the floor and a new tank will respawn
+
+- [Lab Solution](unity/Demo1) - Switch branch to tank_ai to get the solution!
 
 ## Week 4
 - Unity Fundamentals. Maks sure you know about:

@@ -18,7 +18,7 @@ For this assignment, I want you to use all the game AI techniques you can think 
 - Biology
 - Nature documentaries
 - Science fiction
-- Psychedelic experiences
+- Psychedelic experiences you may have had
 - Virtual reality
 
 ## Marking Scheme

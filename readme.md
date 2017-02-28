@@ -34,6 +34,13 @@
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
 ## Week 6
+- Forms a journey into the deep heart of code
+
+    [![YouTube](http://img.youtube.com/vi/ZLmbl5NSCew/0.jpg)](https://www.youtube.com/watch?v=ZLmbl5NSCew)
+
+- My latest creatures video
+
+    [![YouTube](http://img.youtube.com/vi/dTmgEUPLj0/0.jpg)](https://www.youtube.com/watch?v=dTmgEUPLj0)
 
 # Lab
 
@@ -53,6 +60,7 @@ Things to consider
 - [Seek and arrive steering behaviours in Unity.](https://github.com/skooter500/GamesAIBasics) These are implemented using my old framework (boolean flags - quick and dirty but ugly)
 - [Assignment brief! PM me with any comments/ideas](ca.md)
 - [Craig Reynolds on steering behaviours](http://www.red3d.com/cwr/steer/) - Everyone should read!
+
 
 # Lab
 

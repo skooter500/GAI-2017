@@ -40,7 +40,7 @@
 
 - My latest creatures video
 
-    [![YouTube](http://img.youtube.com/vi/dTmgEUPLj0/0.jpg)](https://www.youtube.com/watch?v=dTmgEUPLj0)
+    [![YouTube](http://img.youtube.com/vi/-dTmgEUPLj0/0.jpg)](https://www.youtube.com/watch?v=-dTmgEUPLj0)
 
 # Lab
 

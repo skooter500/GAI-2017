@@ -33,6 +33,21 @@
 - 2013-2014
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
+## Week 6
+
+# Lab
+
+The aim today is to program a path following behaviour. You can use the steering behaviours notes to figure out how to do it from a blank Unity project or you can start with the [project from last week](unity/SeekArrivePursue). Whay you should to is: 
+
+- Make a Path component
+- Make it a field in the Boid
+- Make a path following behaviour in the Boid
+
+Things to consider
+- How will you store the waypoints?
+- Can you add the option of looping the path, so that when the boid reaches the end of the path, it loops back to the start.
+- How can you refactor the steering behaviours code to make it better? Consider making each behaviour a seperate component. 
+
 ## Week 5
 - Seek & arrive steering behaviours - Look at the slides for [course notes](https://onedrive.live.com/?authkey=%21AAb-R5vP9R9enWo&id=AB603D769EDBF24E%21210396&cid=AB603D769EDBF24E)
 - [Seek and arrive steering behaviours in Unity.](https://github.com/skooter500/GamesAIBasics) These are implemented using my old framework (boolean flags - quick and dirty but ugly)

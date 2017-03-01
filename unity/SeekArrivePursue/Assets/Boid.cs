@@ -110,7 +110,13 @@ public class Boid : MonoBehaviour {
     {
         force = Vector3.zero;
 
-        force = Calculate();
+        foreach (SteeringBehaviour b in behaviours)
+        {
+            if (b.isActiveAndEnabled)
+            {
+                force += b.Calculate();
+            }
+        }
 
         /*
         if (seekEnabled)

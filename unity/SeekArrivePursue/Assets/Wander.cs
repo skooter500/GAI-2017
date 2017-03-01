@@ -9,9 +9,7 @@ public class Wander : SteeringBehaviour
     public float distance = 15.0f;
     public float jitter = 5.0f;
     private Vector3 target;
-
-
-
+    
     public void Start()
     {
         target = Random.insideUnitSphere * radius;

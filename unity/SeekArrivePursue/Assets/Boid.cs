@@ -153,17 +153,29 @@ public class Boid : MonoBehaviour {
 	void Update () {
         force = Calculate();
 
-        acceleration = force / mass;
+        Vector3 newAcceleration = force / mass;
+
+        float smoothRate = Mathf.Clamp(9.0f * Time.deltaTime, 0.15f, 0.4f) / 2.0f;
+        acceleration = Vector3.Lerp(acceleration, newAcceleration, smoothRate);
+        
         velocity += acceleration * Time.deltaTime;
 
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        if (velocity.magnitude > float.Epsilon)
+
+        Vector3 globalUp = new Vector3(0, 0.2f, 0);
+        Vector3 accelUp = acceleration * 0.05f;
+        Vector3 bankUp = accelUp + globalUp;
+        smoothRate = Time.deltaTime * 3.0f;
+        Vector3 tempUp = transform.up;
+        tempUp = Vector3.Lerp(tempUp, bankUp, smoothRate);
+
+        if (velocity.magnitude  > 0.0001f)
         {
             transform.forward = velocity;
+            transform.forward.Normalize();
+            transform.LookAt(transform.position + transform.forward, tempUp);
+            velocity *= 0.99f;
         }
-
-        transform.position += velocity * Time.deltaTime;
-        
-
+        transform.position += velocity * Time.deltaTime;        
 	}
 }

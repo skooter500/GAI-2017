@@ -22,12 +22,7 @@ public class Boid : MonoBehaviour {
     public float slowingDistance = 5;
 
     // Offset Pursue
-    public bool offsetPursueEnabled;
-    public Boid leader;
-    private Vector3 offset;
 
-    public bool followPathEnabled = false;
-    public Path path;
     
     // Use this for initializationG
     void Start () {
@@ -37,13 +32,6 @@ public class Boid : MonoBehaviour {
         foreach (SteeringBehaviour b in behaviours)
         {
             this.behaviours.Add(b);
-        }
-
-
-        if (offsetPursueEnabled)
-        {
-            offset = transform.position- leader.transform.position;
-            offset = Quaternion.Inverse(leader.transform.rotation) * offset;
         }
 	}
 
@@ -55,39 +43,11 @@ public class Boid : MonoBehaviour {
         Vector3 targetPos = target.transform.position
             + (time * target.velocity);
 
-        return Seek(targetPos);
+        return SeekForce(targetPos);
     }
 
-    Vector3 FollowPath()
-    {
-        Vector3 nextWaypoint = path.NextWaypoint();
-        if (Vector3.Distance(transform.position, nextWaypoint) < 3)
-        {
-            path.AdvanceToNext();
-        }
 
-        if (!path.looped && path.IsLast())
-        {
-            return Arrive(nextWaypoint);
-        }
-        else
-        {
-            return Seek(nextWaypoint);
-        }
-    }
-
-    Vector3 OffsetPursue(Boid target, Vector3 offset)
-    {
-        Vector3 worldtarget = target.transform.TransformPoint(offset);
-        float dist = Vector3.Distance(worldtarget
-            , transform.position);
-        float time = dist / maxSpeed;
-
-        Vector3 targetPos = worldtarget + (target.velocity * time);
-        return Arrive(targetPos);
-    }
-
-    Vector3 Seek(Vector3 target)
+    public Vector3 SeekForce(Vector3 target)
     {
         Vector3 desired = target - transform.position;
         desired.Normalize();
@@ -95,7 +55,7 @@ public class Boid : MonoBehaviour {
         return desired- velocity;
     }
 
-    Vector3 Arrive(Vector3 target)
+    public Vector3 ArriveForce(Vector3 target, float slowingDistance)
     {
         Vector3 toTarget = target - transform.position;
         float distance = toTarget.magnitude;
@@ -148,6 +108,7 @@ public class Boid : MonoBehaviour {
 
         return force;
     }
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -171,9 +132,7 @@ public class Boid : MonoBehaviour {
 
         if (velocity.magnitude  > 0.0001f)
         {
-            transform.forward = velocity;
-            transform.forward.Normalize();
-            transform.LookAt(transform.position + transform.forward, tempUp);
+            transform.LookAt(transform.position + velocity, tempUp);
             velocity *= 0.99f;
         }
         transform.position += velocity * Time.deltaTime;        

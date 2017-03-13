@@ -26,7 +26,7 @@ public class OffsetPursue : SteeringBehaviour {
         float time = dist / boid.maxSpeed;
 
         Vector3 targetPos = worldtarget + (leader.velocity * time);
-        return boid.ArriveForce(targetPos, boid.slowingDistance);
+        return boid.ArriveForce(targetPos, 5);
 
     }
 }

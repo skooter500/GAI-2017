@@ -16,7 +16,6 @@
 - Twitter: [@skooter500](http://twitter.com/skooter500)
 - [Class Facebook group](https://www.facebook.com/groups/1887916721485612/)
 
-
 ## Web Resources
 - [AI Game Dev](http://aigamedev.com/)
 - [GDC Vault](http://www.gdcvault.com/)
@@ -75,7 +74,6 @@ Things to consider
 - [Seek and arrive steering behaviours in Unity.](https://github.com/skooter500/GamesAIBasics) These are implemented using my old framework (boolean flags - quick and dirty but ugly)
 - [Assignment brief! PM me with any comments/ideas](ca.md)
 - [Craig Reynolds on steering behaviours](http://www.red3d.com/cwr/steer/) - Everyone should read!
-
 
 # Lab
 

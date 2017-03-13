@@ -33,6 +33,21 @@
 - 2013-2014
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
+## Week 8
+
+### Lab
+
+Have a look at the PathFollowSteering project in the git repo and implement the Harmonic steering behaviour you can see in this video:
+
+[![YouTube](http://img.youtube.com/vi/zOMWSVkWpT8/0.jpg)](https://www.youtube.com/watch?v=zOMWSVkWpT8)
+
+You can see from the gizmos what the behaviour needs to do. The harmonic steering behaviour should seek a point on the outside of a sphere whose center is projected in front of the boid on the X-Z plane. The point should move along the circumpherence of the sphere on a harmonic motion.  You can specify the frequency and amplitude of the harmonic and the radius and distance to the harmonic sphere. Your harmoinc behaviour should also draw lovely gizmos. 
+
+In the class we will implement a lerping spine animator and some other lerping magic which we will use with the harmonic steering behaviour to make all kinds of wriggling creatures.  
+
+## Week 7 
+- Games Fleadh    
+
 ## Week 6
 - Forms a journey into the deep heart of code
 

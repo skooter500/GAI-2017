@@ -34,6 +34,10 @@ public class Boid : MonoBehaviour {
     {
         Vector3 toTarget = target - transform.position;
         float distance = toTarget.magnitude;
+        if (distance == 0)
+        {
+            return Vector3.zero;
+        }
         float ramped = maxSpeed * (distance / slowingDistance);
         float clamped = Mathf.Min(ramped, maxSpeed);
         Vector3 desiredVelocity = clamped * (toTarget / distance);
@@ -88,7 +92,6 @@ public class Boid : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         force = Calculate();
-
         Vector3 newAcceleration = force / mass;
 
         float smoothRate = Mathf.Clamp(9.0f * Time.deltaTime, 0.15f, 0.4f) / 2.0f;
@@ -110,6 +113,7 @@ public class Boid : MonoBehaviour {
             transform.LookAt(transform.position + velocity, tempUp);
             velocity *= 0.99f;
         }
+        Debug.Log(velocity);
         transform.position += velocity * Time.deltaTime;        
 	}
 }

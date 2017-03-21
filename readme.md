@@ -32,8 +32,26 @@
 - 2013-2014
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
-## Week 8
+## Week 9
 
+### Lab
+Check out these happy, dancing, back flipping tardigrades:
+
+[![YouTube](http://img.youtube.com/vi/5lNe3H6jXJA/0.jpg)](https://www.youtube.com/watch?v=5lNe3H6jXJA)
+
+They use a variation of the harmonic behaviour that we learned last week that I call NoiseWander. Instead of using a sin finction to generate the steering, NoiseWander uses Perlin Noise. See if you can implement NoiseWander. Perlin noise is a really cool technique for generating coherent noise that has lots of applications in game development. For example, Perlin noise is used to generate the rolling landscapes in Minecraft. I also add several Perlin noise functions together to generate the landscape of Forms.
+
+In the second video, the dolphin is combining a vertical harmonic steering behaviour with NoiseWander. Both behaviours are active on the dolphin at the same time and the forces are weighted and summed. See if you can make something similar.
+
+[![YouTube](http://img.youtube.com/vi/_qrh4X9B7qA/0.jpg)](https://www.youtube.com/watch?v=_qrh4X9B7qA)
+
+In the third video (which you have probably already seen) many of the creatures use another script called HarmonicController. What this does is every few seconds, changes the frequency and amplitude of the harmonic controller. I lerp to the new values so the changes are nice and smooth. See what you can come up with using a similar technique:
+
+[![YouTube](http://img.youtube.com/vi/-dTmgEUPLj0/0.jpg)](https://www.youtube.com/watch?v=-dTmgEUPLj0)
+
+## Week 8
+- Harmonic steering behaviour
+- SPine animator
 ### Lab
 
 Have a look at the PathFollowSteering project in the git repo and implement the Harmonic steering behaviour you can see in this video:

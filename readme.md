@@ -33,6 +33,10 @@
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
 
 ## Week 9
+- Obstacle avoidance behaviour
+- Coroutines
+
+![Image](images/IMAG0190.jpg)
 
 ### Lab
 Check out these happy, dancing, back flipping tardigrades:
@@ -51,7 +55,7 @@ In the third video (which you have probably already seen) many of the creatures 
 
 ## Week 8
 - Harmonic steering behaviour
-- SPine animator
+- Spine animator
 ### Lab
 
 Have a look at the PathFollowSteering project in the git repo and implement the Harmonic steering behaviour you can see in this video:

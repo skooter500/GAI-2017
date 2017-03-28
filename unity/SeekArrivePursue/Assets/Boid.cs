@@ -113,7 +113,6 @@ public class Boid : MonoBehaviour {
             transform.LookAt(transform.position + velocity, tempUp);
             velocity *= 0.99f;
         }
-        Debug.Log(velocity);
         transform.position += velocity * Time.deltaTime;        
 	}
 }

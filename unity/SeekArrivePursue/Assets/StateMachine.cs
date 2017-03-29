@@ -34,13 +34,14 @@ public class StateMachine : MonoBehaviour
 
     public void ChangeState(State newState)
     {
+        Debug.Log(this.GetType().Name + " changed to: " + newState.GetType().Name);
         if (state != null)
         {
             state.Exit();
         }
-        newState = state;
-        newState.fsm = this;
-        newState.Enter();
+        state = newState;
+        state.fsm = this;
+        state.Enter();
     }
 }
 

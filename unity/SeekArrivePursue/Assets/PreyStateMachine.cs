@@ -22,6 +22,8 @@ public class AttackState : State
         fsm.GetComponent<OffsetPursue>().enabled = true;
         fsm.GetComponent<OffsetPursue>().leader = 
             GameObject.FindGameObjectWithTag("predator").GetComponent<Boid>();
+        PreyStateMachine psm = (PreyStateMachine)fsm;
+        psm.StartCoroutine(psm.Attack());
     }
 
     public override void Exit()
@@ -49,4 +51,11 @@ public class PreyStateMachine : StateMachine {
         }
     }
 
+    public System.Collections.IEnumerator Attack()
+    {
+        while (true)
+        {
+
+        }
+    }
 }

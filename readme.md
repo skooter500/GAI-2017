@@ -5,7 +5,7 @@
 ## Resources
 - [Class Facebook group - Please join!](https://www.facebook.com/groups/1887916721485612/)
 - [Previous lab tests](https://1drv.ms/u/s!Ak7y2552PWCrkNACJ7n8qiU8UPRs9w)
-- [Assignment]()
+- [Assignment](ca.md)
 - [A set of out of date course notes](https://onedrive.live.com/?authkey=%21AAb-R5vP9R9enWo&id=AB603D769EDBF24E%21210396&cid=AB603D769EDBF24E)
 - [Forms git repo - Please Fork!](https://github.com/skooter500/Forms)
 - [A spotify playlist of music to listen to while coding](https://open.spotify.com/user/1155805407/playlist/5NYFsIFTgNOI93hONLbqNI)

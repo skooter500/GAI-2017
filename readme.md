@@ -10,6 +10,21 @@
 - [Forms git repo - Please Fork!](https://github.com/skooter500/Forms)
 - [A spotify playlist of music to listen to while coding](https://open.spotify.com/user/1155805407/playlist/5NYFsIFTgNOI93hONLbqNI)
 
+| Student | Assignment | Lab Test | CA Overall |
+| --------|------------|-----------|----------|
+| C13443362 | 63 | 70 | 65 |
+| c13496628 | 60 | 64 | 61 |
+| D15122839 | 64 | 72 | 66 |
+| C13383656 | 60 | 61 | 60 |
+| C13547287 | 74 | 80 | 76 |
+| C13525117 | 52 | 40 | 49 |
+| C11454238 | 67 | 40 | 59 |
+| C13730921 | 72 | 81 | 74 |
+| c13505347 | 0 | 16 | 5 |
+| D11124857 | 0 | 31 | 9 |
+
+
+
 ## Contact the lecturer
 
 - Email: bryan.duggan@dit.ie

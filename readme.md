@@ -5,7 +5,7 @@
 ## Resources
 - [Class Facebook group - Please join!](https://www.facebook.com/groups/1887916721485612/)
 - [Previous lab tests](https://1drv.ms/u/s!Ak7y2552PWCrkNACJ7n8qiU8UPRs9w)
-- [Assignment]()
+- [Assignment](ca.md)
 - [A set of out of date course notes](https://onedrive.live.com/?authkey=%21AAb-R5vP9R9enWo&id=AB603D769EDBF24E%21210396&cid=AB603D769EDBF24E)
 - [Forms git repo - Please Fork!](https://github.com/skooter500/Forms)
 - [A spotify playlist of music to listen to while coding](https://open.spotify.com/user/1155805407/playlist/5NYFsIFTgNOI93hONLbqNI)
@@ -22,8 +22,6 @@
 | C13730921 | 72 | 81 | 74 |
 | c13505347 | 0 | 16 | 5 |
 | D11124857 | 0 | 31 | 9 |
-
-
 
 ## Contact the lecturer
 
@@ -46,6 +44,51 @@
     - https://github.com/skooter500/UnitySteeringBehaviours 
 - 2013-2014
     - https://github.com/skooter500/XNA-3D-Steering-Behaviours-for-Space-Ships
+
+## Week 10
+- FSM's
+
+## Lab
+Try and make this predator prey simulation. The prey will follow a path until the predator comes into range. When the perdator is is range the prey will attack the predator by shooting at it. It only shoots at the predator if it is inside the field of view. The predator will get close to the prey, but will flee from the prey if the prey attacks it:
+
+[![YouTube](http://img.youtube.com/vi/SqThPN_ogJE/0.jpg)](https://www.youtube.com/watch?v=SqThPN_ogJE)
+
+## Week 9
+- Obstacle avoidance behaviour
+- Coroutines
+
+![Image](images/IMAG0190.jpg)
+
+### Lab
+Check out these happy, dancing, back flipping tardigrades:
+
+[![YouTube](http://img.youtube.com/vi/5lNe3H6jXJA/0.jpg)](https://www.youtube.com/watch?v=5lNe3H6jXJA)
+
+They use a variation of the harmonic behaviour that we learned last week that I call NoiseWander. Instead of using a sin finction to generate the steering, NoiseWander uses Perlin Noise. See if you can implement NoiseWander. Perlin noise is a really cool technique for generating coherent noise that has lots of applications in game development. For example, Perlin noise is used to generate the rolling landscapes in Minecraft. I also add several Perlin noise functions together to generate the landscape of Forms.
+
+In the second video, the dolphin is combining a vertical harmonic steering behaviour with NoiseWander. Both behaviours are active on the dolphin at the same time and the forces are weighted and summed. See if you can make something similar.
+
+[![YouTube](http://img.youtube.com/vi/_qrh4X9B7qA/0.jpg)](https://www.youtube.com/watch?v=_qrh4X9B7qA)
+
+In the third video (which you have probably already seen) many of the creatures use another script called HarmonicController. What this does is every few seconds, changes the frequency and amplitude of the harmonic controller. I lerp to the new values so the changes are nice and smooth. See what you can come up with using a similar technique:
+
+[![YouTube](http://img.youtube.com/vi/-dTmgEUPLj0/0.jpg)](https://www.youtube.com/watch?v=-dTmgEUPLj0)
+
+## Week 8
+- Harmonic steering behaviour
+- Spine animator
+### Lab
+
+Have a look at the PathFollowSteering project in the git repo and implement the Harmonic steering behaviour you can see in this video:
+
+[![YouTube](http://img.youtube.com/vi/zOMWSVkWpT8/0.jpg)](https://www.youtube.com/watch?v=zOMWSVkWpT8)
+
+You can see from the gizmos what the behaviour needs to do. The harmonic steering behaviour should seek a point on the outside of a sphere whose center is projected in front of the boid on the X-Z plane. The point should move along the circumpherence of the sphere on a harmonic motion.  You can specify the frequency and amplitude of the harmonic and the radius and distance to the harmonic sphere. Your harmoinc behaviour should also draw lovely gizmos. 
+
+In the class we will implement a lerping spine animator and some other lerping magic which we will use with the harmonic steering behaviour to make all kinds of wriggling creatures.  
+
+## Week 7 
+- Games Fleadh    
 
 ## Week 6
 - Forms a journey into the deep heart of code

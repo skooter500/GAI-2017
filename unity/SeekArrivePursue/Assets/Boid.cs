@@ -9,22 +9,9 @@ public class Boid : MonoBehaviour {
     public Vector3 acceleration = Vector3.zero;
     public Vector3 velocity = Vector3.zero;
     public float mass = 1;
-    public float maxSpeed = 5.0f;
-
-    // Seek fields
-    public bool seekEnabled = false;
-    public Vector3 seekTargetPos;
-    public GameObject seekTarget;
-
-    public bool arriveEnabled = false;
-    public Vector3 arriveTargetPos;
-    public GameObject arriveTarget;
-    public float slowingDistance = 5;
-
-    // Offset Pursue
-
+    public float maxSpeed = 5.0f;   
     
-    // Use this for initializationG
+    // Use this for initialization
     void Start () {
 
         SteeringBehaviour[] behaviours = GetComponents<SteeringBehaviour>();
@@ -34,18 +21,6 @@ public class Boid : MonoBehaviour {
             this.behaviours.Add(b);
         }
 	}
-
-    Vector3 Pursue(Boid target)
-    {
-        float dist = Vector3.Distance(target.transform.position, transform.position);
-        float time = dist / maxSpeed;
-
-        Vector3 targetPos = target.transform.position
-            + (time * target.velocity);
-
-        return SeekForce(targetPos);
-    }
-
 
     public Vector3 SeekForce(Vector3 target)
     {
@@ -59,6 +34,10 @@ public class Boid : MonoBehaviour {
     {
         Vector3 toTarget = target - transform.position;
         float distance = toTarget.magnitude;
+        if (distance == 0)
+        {
+            return Vector3.zero;
+        }
         float ramped = maxSpeed * (distance / slowingDistance);
         float clamped = Mathf.Min(ramped, maxSpeed);
         Vector3 desiredVelocity = clamped * (toTarget / distance);
@@ -74,7 +53,7 @@ public class Boid : MonoBehaviour {
         {
             if (b.isActiveAndEnabled)
             {
-                force += b.Calculate();
+                force += b.Calculate() * b.weight;
             }
         }
 
@@ -113,7 +92,6 @@ public class Boid : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         force = Calculate();
-
         Vector3 newAcceleration = force / mass;
 
         float smoothRate = Mathf.Clamp(9.0f * Time.deltaTime, 0.15f, 0.4f) / 2.0f;
